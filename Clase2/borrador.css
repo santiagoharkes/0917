@@ -1,0 +1,28 @@
+/* selector {
+  declaraciones o reglas
+  propiedad: valor;
+  propiedad: valor;
+  propiedad: valor;
+} */
+
+/* h1 {
+  color: red;
+  font-size: 21px, cm, mm, pt, in; UNIDADES ABSOLUTAS
+  font-size: 1em, 2rem, 40%, 12vw, 12vh: UNIDADES RELATIVAS
+} */
+
+.header__container {
+}
+
+#header__container-id {
+}
+
+* {
+}
+
+/* selectores: 
+- Selector de etiqueta (h1, p, div, etc) 
+- Selector de clase (
+    se llama con un punto seguido de la clase
+  ) 
+- Selector de ID (se llama con un numeral seguido del id) - Selector universal; */

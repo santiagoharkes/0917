@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+
+body {
+  background: #ad5389;
+  background: -webkit-linear-gradient(to bottom, #3c1053, #ad5389);
+  background: linear-gradient(to bottom, #3c1053, #ad5389);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header__container-img {
+  width: 97px;
+}
+
+article {
+  background: red;
+  display: inline-block;
+}
+
+h1 {
+  font-family: "Ranchers", cursive;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  background: white;
+}
+
+/* body {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+
+#h1__id {
+  color: forestgreen;
+}
+
+.h1__principal {
+  color: violet;
+} */
+
+/* h1 {
+  color: red;
+  font-size: 50px;
+}
+
+h1 {
+  color: green;
+} */
+
+/* a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+}
+
+p {
+  color: blue;
+}
+
+p::first-line {
+  color: red;
+} */
+
+/* ESPECIFICIDAD
+CASCADA:
+Lo ultimo reemplaza lo anterior
+HERENCIA:
+Algunas propiedades del padre se van a heredar al elemento hijo
+
+- El que esté más cerca del elemento será el que tenga más especificidad, SALVO, que sea un id. */
