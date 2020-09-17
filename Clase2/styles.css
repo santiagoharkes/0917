@@ -8,8 +8,40 @@ body {
   height: 100vh;
 }
 
+.nav_principal {
+  color: #33fd00;
+  color: rgb(231, 23, 23);
+  background-color: rgba(231, 23, 23, 1);
+  padding: 50px;
+}
+
+#section_id {
+  background-color: white;
+}
+
 .header__container-img {
   width: 97px;
+}
+
+li {
+  background: red;
+}
+
+li:hover {
+  background: blue;
+  font-size: 45px;
+}
+
+li:active {
+  background: green;
+}
+
+button {
+  background-color: white;
+}
+
+button:disabled {
+  background-color: rgba(0, 0, 0, 0.185);
 }
 
 article {

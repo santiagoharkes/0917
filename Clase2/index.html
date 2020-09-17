@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primera página!</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .nav_principal {
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <header class="header__container" id="header__container-id">
@@ -13,17 +18,18 @@
         src="assets/img/header-logo.png"
         alt="Logo de CSS"
       />
-      <nav>
+      <nav style="background-color: greenyellow" class="nav_principal">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <button disabled>Esto es un boton</button>
         </ul>
       </nav>
       <img src="" alt="" />
     </header>
     <main>
-      <section>
+      <section id="section_id">
         <h1 id="h1__id" class="h1__principal">Esta es mi primera página!</h1>
         <img src="assets/img/sectionimage.jpg" alt="Css shirt" />
         <p>

@@ -1,0 +1,21 @@
+/* SELECTORES COMBINADOS */
+
+p:first-child {
+  color: red;
+}
+
+article p:first-child {
+  color: yellow;
+}
+
+article > p:first-child {
+  color: green;
+}
+
+h1 + p {
+  background-color: green;
+}
+
+h1 ~ p {
+  background-color: red;
+}

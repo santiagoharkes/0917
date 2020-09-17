@@ -11,6 +11,19 @@
   font-size: 1em, 2rem, 40%, 12vw, 12vh: UNIDADES RELATIVAS
 } */
 
+/* SELECTOR DE ETIQUETA
+Quiero que todos los headers tengan fondo violeta (o rosa)
+header {
+  background: violet;
+} */
+
+.nav_principal {
+  background-color: black;
+  color: #33fd00;
+  color: rgb(231, 23, 23);
+  color: rgba(231, 23, 23, 1);
+}
+
 .header__container {
 }
 
