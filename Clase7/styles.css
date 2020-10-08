@@ -1,0 +1,81 @@
+.contenedor {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 10px auto;
+  position: relative;
+}
+
+.rojo {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation-name: mianimacion;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0, -0.48, 0.15, 0.97);
+  /* animation-timing-function: cubic-bezier(0.01, -0.27, 0.4, 1); */
+  position: absolute;
+  border-radius: 50%;
+}
+
+.azul {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  animation-name: mianimacion1;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0, -0.48, 0.15, 0.97);
+  /* animation-timing-function: cubic-bezier(0.01, -0.27, 0.4, 1); */
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* @keyframes mianimacion {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 200px;
+    left: 70%;
+    background-color: lawngreen;
+  }
+  75% {
+    top: 40%;
+    left: 0px;
+    background-color: lightcoral;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: blue;
+  }
+} */
+
+@keyframes mianimacion {
+  0% {
+    bottom: 0;
+    left: calc(50% - 75px);
+  }
+  100% {
+    bottom: 100px;
+    left: calc(50% - 75px);
+    background-color: blue;
+  }
+}
+
+@keyframes mianimacion1 {
+  0% {
+    bottom: 0;
+    left: calc(55% - 75px);
+  }
+  100% {
+    bottom: 100px;
+    left: calc(55% - 75px);
+    background-color: green;
+  }
+}

@@ -1,0 +1,28 @@
+.grid-container {
+  width: 80vw;
+  border: 5px solid black;
+  display: grid;
+  margin: 1px auto;
+  grid-template-columns: [primera] 250px [segunda] 1fr [tercera] 1fr;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas:
+    "uno dos tres"
+    "cuatro cinco .";
+  /* column-gap: 20px;
+  row-gap: 5px; */
+  /* Justify items alinea en horizontal */
+  justify-items: end;
+  /* Align items alinea en vertical */
+  align-items: end;
+  /* place-items: align-items justify-items; */
+  place-items: center;
+  /* grid-auto-columns: 60px;
+  grid-auto-rows: 20px;
+  grid-auto-flow: column; */
+}
+
+.cuadrado {
+  width: 150px;
+  height: 150px;
+  background: gray;
+}

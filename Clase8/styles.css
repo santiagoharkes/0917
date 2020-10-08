@@ -1,0 +1,66 @@
+.contenedor {
+  width: 500px;
+  height: 500px;
+  margin: 30px auto;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boton {
+  width: 100px;
+  height: 50px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+}
+
+.boton:hover {
+  background: blue;
+  color: white;
+  width: 300px;
+  height: 150px;
+  /* transition-property: background width height;
+  transition-duration: 1s, 1s, 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 3s; */
+  transition: background 2s, width 2s, height 2s;
+}
+
+.botonTransform {
+  width: auto;
+  height: 50px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+  padding: 20px;
+  transition: transform 1s;
+}
+
+.botonTransform:hover {
+  /* transform: rotate(360deg); */
+  /* transform: rotateX(360deg); */
+  /* transform: rotateY(360deg); */
+  /* transform: rotateZ(360deg); */
+  /* transform: scale(1.2); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(1.2); */
+  /* transform: skew(-30deg); */
+  /* transform: skewX(-30deg); */
+  /* transform: skewY(-30deg); */
+  transform: translate(50px, 50px);
+  /* transform: translateX(50px);
+  transform: translateY(50px); */
+  transition: transform 1s;
+}

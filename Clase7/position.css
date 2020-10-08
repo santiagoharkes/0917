@@ -1,0 +1,61 @@
+.contenedor {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 10px auto;
+}
+
+.cajita {
+  width: 150px;
+  height: 150px;
+}
+
+/* .rojo {
+  background-color: red;
+  position: relative;
+  Es igual a la position static pero desbloquea TOP LEFT BOTTOM Y RIGHT como todo elemento posicionado
+  No afecta al flujo normal de la página
+} */
+
+/* .rojo {
+  background-color: red;
+  position: absolute;
+  Desbloquea top left bottom right
+  Pierde el flujo normal de la pagina
+  Se posiciona en relacion al padre posicionado más cercano
+} */
+
+/* .rojo {
+  background-color: red;
+  position: fixed;
+  Desbloquea top left bottom right
+  Pierde el flujo normal de la pagina
+  Se posiciona en relacion al viewport
+} */
+
+.rojo {
+  background-color: red;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: green;
+}
+
+.textitos {
+  height: 500vh;
+  background: hotpink;
+}
+
+/* nav {
+  background-color: lawngreen;
+  position: sticky;
+  top: 10px;
+
+    La posicion sticky, es una mezcla entre relative y fixed. ES DECIR:
+    Es relative (o sea, respeta el flujo de la pagina) hasta que choque con el limite que le indiquemos
+    En ese caso, se transforma en fixed (no respeta el flujo, y se posiciona en relacion a el viewport)
+} */
