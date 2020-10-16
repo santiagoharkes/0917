@@ -1,0 +1,50 @@
+body {
+  height: 600vh;
+  background-color: burlywood;
+}
+
+nav {
+  position: relative;
+}
+
+ul {
+  display: none;
+}
+
+input:checked ~ ul {
+  display: block;
+  padding: 0;
+  /* position: absolute;
+  top: 45px;
+  left: 0; */
+}
+
+label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 40px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+input {
+  display: none;
+}
+
+li {
+  display: block;
+  background-color: gainsboro;
+  color: green;
+  margin: 0;
+  padding: 25px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: hotpink;
+  color: blue;
+}

@@ -1,0 +1,71 @@
+.grid-container {
+  width: 80vw;
+  border: 5px solid black;
+  display: grid;
+  margin: 1px auto;
+  grid-template-columns: [primera] 250px [segunda] 1fr [tercera] 1fr;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas:
+    "uno dos tres"
+    "cuatro cuatro .";
+  /* column-gap: 20px;
+  row-gap: 5px; */
+  /* Justify items alinea en horizontal */
+  justify-items: end;
+  /* Align items alinea en vertical */
+  align-items: end;
+  /* place-items: align-items justify-items; */
+  place-items: center;
+  /* grid-auto-columns: 60px;
+  grid-auto-rows: 20px;
+  grid-auto-flow: column; */
+}
+
+.cuadrado {
+  /* width: 150px;
+  height: 150px; */
+  width: 100%;
+  height: 100%;
+  background: rgb(201, 106, 201);
+}
+
+/* columna 3/4
+fila 2/3 */
+
+.uno {
+  /* grid-column-start: segunda;
+  grid-column-end: span 2;
+
+  grid-row-start: 1;
+  grid-row-end: 2; */
+
+  /* grid-area: fila donde empieza / columna donde empieza / fila donde termina / columna donde termina; */
+  grid-area: cuatro;
+
+  /* grid-column: comienzo / fin; */
+  /* grid-column: 1 / 2;
+  grid-row: 1 / 2; */
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-areas:
+      "uno"
+      "dos";
+  }
+
+  .uno {
+    grid-area: dos;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-areas:
+      "dos"
+      "uno";
+  }
+}
