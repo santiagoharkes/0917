@@ -1,6 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 600vh;
   background-color: burlywood;
+}
+
+.fondito {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("https://img.vixdata.io/pd/jpg-large/es/sites/default/files/btg/curiosidades.batanga.com/files/Como-se-forma-la-nieve-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+}
+
+.fondito::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.452);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-dodge;
+}
+
+.zindex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -47,4 +85,8 @@ li {
 li:hover {
   background-color: hotpink;
   color: blue;
+}
+
+.iconitoPiola {
+  font-size: 30px;
 }

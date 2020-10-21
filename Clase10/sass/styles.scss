@@ -1,0 +1,12 @@
+$colorPrincipal: #fff;
+$colorSecundario: #ff0000;
+
+nav {
+  background: $colorSecundario;
+  color: $colorPrincipal;
+  ul {
+    background: $colorPrincipal;
+    color: $colorSecundario;
+    width: 150px;
+  }
+}

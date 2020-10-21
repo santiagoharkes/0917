@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.item1,
+.item2,
+.item-medio {
+  width: 700px;
+  border: 3px solid black;
+  border-radius: 40px;
+  margin: 0 50px;
+  padding: 50px;
+}
+
+.item1 {
+  background: blue;
+}
+
+.item2 {
+  background: red;
+}
+
+.item-medio {
+  background: orangered;
+}
+
+.navecita {
+  background: red;
+}
+
+.navecita__imagencita {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.navecita__listita {
+  background: red;
+}
+
+.navecita__listita-item {
+  background: blue;
+}
+
+.navecita {
+  background: red;
+}
