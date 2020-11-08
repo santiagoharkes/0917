@@ -1,0 +1,19 @@
+.primera-fila,
+.segunda-fila {
+  background-color: salmon;
+  border: 2px solid black;
+}
+
+.segunda-fila {
+  border-top: none;
+  background-color: seagreen;
+}
+
+.colinda {
+  border: 1px solid lime;
+}
+
+body {
+  height: 10px;
+  height: 500vh;
+}

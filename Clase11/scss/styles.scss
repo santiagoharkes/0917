@@ -1,0 +1,60 @@
+@import "variables";
+
+$listaDeColores: (#e4572e, #d4d2a5, #5e5768);
+
+@mixin cuadradito($parametrito: red) {
+  width: 150px;
+  height: 150px;
+  background: $parametrito;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+.cuadradouno,
+.cuadradodos {
+  @include cuadradito(lime);
+}
+
+.cuadradotres {
+  @include cuadradito(nth($listaDeColores, 3));
+}
+
+p {
+  color: green;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+nav {
+  width: $widthPrincipal;
+  height: 200px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    background-color: lightgreen;
+  }
+}
+
+section {
+  article {
+    header {
+      @include cuadradito(lime);
+      h2 {
+        color: red;
+      }
+    }
+  }
+}
+
+.pepito {
+  background-color: lightslategrey;
+
+  &__cibrian {
+    background-color: $colorcitoDos;
+  }
+}

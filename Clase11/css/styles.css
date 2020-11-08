@@ -1,0 +1,46 @@
+.cuadradouno,
+.cuadradodos {
+  width: 150px;
+  height: 150px;
+  background: lime;
+  border-radius: 40px;
+  display: inline-block; }
+
+.cuadradotres {
+  width: 150px;
+  height: 150px;
+  background: #5e5768;
+  border-radius: 40px;
+  display: inline-block; }
+
+p {
+  color: green; }
+
+body {
+  background-color: lightcoral; }
+
+nav {
+  width: 100vw;
+  height: 200px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav ul {
+    background-color: lightgreen; }
+
+section article header {
+  width: 150px;
+  height: 150px;
+  background: lime;
+  border-radius: 40px;
+  display: inline-block; }
+  section article header h2 {
+    color: red; }
+
+.pepito {
+  background-color: lightslategrey; }
+  .pepito__cibrian {
+    background-color: #1e1e44; }
+
+/*# sourceMappingURL=styles.css.map */
