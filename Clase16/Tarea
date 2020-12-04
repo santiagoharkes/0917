@@ -1,0 +1,29 @@
+Hacer una función que me devuelva lo siguiente en consola:
+// "Hola! Estoy escribiendo desde consola :)"
+
+Escribir una función a la que se le pase una cadena <string> y
+muestre por consola
+// ¡Hola <string>!
+
+Crear dos variables: una con nombre y otra con apellido
+Crear una función que me devuelva por consola el nombre completo
+
+Ahora modificar la función anterior y hacerlo con closures.
+Una función que reciba el nombre y que retorne otra función que reciba el apellido y me devuelva el nombre completo.
+
+Dado el string: "¡Hello NUCBERS! Acá tamos aprendiendo metodos de strings"
+Escribir una función que me devuelva por consola si la palabra que le pasemos está en ese string.
+Le pasamos "hello" y devuelve por consola: 
+// "Sí, se encontró la palabra"
+Le pasamos "perri" y devuelve por consola: 
+// "No amigui, no está esa palabra en el string"
+(CUIDADO con el case sensitive... tiene que tener esa igualdad para que sea indiferente a las mayúsculas y minúsculas)
+
+Ahora modificar la función anterior y agregarle lo siguiente:
+Si lo que buscamos se encuentra en el string, quiero que le agregue al final del string original lo siguiente: 
+// " y vamos a ser cracks en JS!"
+Si no, que salga de la función sin devolver nada.
+
+Y la última, con un poquito de trampa...
+Crear una función que nos divida el string original en caracteres individuales y los guarde en un array
+Este punto vale doble (?)
