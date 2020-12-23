@@ -1,0 +1,26 @@
+button {
+  background-color: salmon;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  outline: none;
+  color: #fafafa;
+  transition: all 0.5s ease-in-out;
+}
+
+.nuevaClase {
+  background-color: crimson;
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}

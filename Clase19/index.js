@@ -283,38 +283,34 @@
 
 // SWITCH
 
-const aPer = 5;
+const aPer = "Hola";
 
-if (aPer === 1) {
-  console.log("Es uno");
-} else if (aPer === 2) {
-  console.log("Es dos");
-} else if (aPer === 3) {
-  console.log("Es tres");
-} else if (aPer === 4) {
-  console.log("Es cuatro");
-} else if (aPer === 5) {
-  console.log("Es cinco");
-}
+// if (aPer === 1) {
+//   console.log("Es uno");
+// } else if (aPer === 2) {
+//   console.log("Es dos");
+// } else if (aPer === 3) {
+//   console.log("Es tres");
+// } else if (aPer === 4) {
+//   console.log("Es cuatro");
+// } else if (aPer === 5) {
+//   console.log("Es cinco");
+// }
 
 switch (aPer) {
-  case 1:
-    console.log("Es uno");
-    break;
-  case 2:
-    console.log("Es dos");
-    break;
-  case 3:
-    console.log("Es tres");
-    break;
-  case 4:
-    console.log("Es cuatro");
-    break;
-  case 5:
-    console.log("Es cinco");
+  case "hola":
+    console.log("Es el case UNO");
     break;
 
-  default:
-    console.log("No es ningun numero menor a 5");
+  case "Hola":
+    console.log("Es el case DOS");
+    break;
+
+  case "Chau":
+    console.log("Es el case TRES");
+    break;
+
+  case "chauy":
+    console.log("Es el case CUATRO");
     break;
 }
