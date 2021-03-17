@@ -1,4 +1,4 @@
-// elemento.agregarEscuchador(evento, funcion)
+// elemento.agregarEscuchador(evento, funcion, opciones)
 
 // EventTarget: WINDOW, DOCUMENT, ELEMENT
 // Evento: puede ser click, scroll, submit... etc. (hay muchos)

@@ -1,0 +1,9 @@
+p {
+  transition: all 0.5s cubic-bezier(0.14, 1.43, 0.73, 0.05);
+}
+
+.rojito {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}

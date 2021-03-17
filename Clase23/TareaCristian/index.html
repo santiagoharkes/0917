@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      font-size: 18px;
+    }
+    #muestraIngresos {
+      color: darkgreen;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #muestraEgresos {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #muestraTotal {
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <h1>Esto es una lista de cosas</h1>
+
+    <form action="" id="formuLindo">
+      <input
+        type="text"
+        name=""
+        id="inputcito"
+        placeholder="Agregá un producto..."
+      />
+      <select name="" id="">
+        <option value="Holis">Ingreso</option>
+        <option value="Holis">Extraccion</option>
+      </select>
+      <button id="botoncito">Agregar</button>
+    </form>
+    <ul id="listita"></ul>
+
+    <h2>Tarea de movimientos bancarios</h2>
+    <button id="transacciones">Ejecutar transacciones</button>
+    <div>
+      <label for="">Total Ingresos</label>
+      <label id="muestraIngresos"></label>
+    </div>
+    <div>
+      <label for="">Total Egresos</label>
+      <label for="" id="muestraEgresos"></label>
+    </div>
+    <div>
+      <label for="">Total</label>
+      <label for="" id="muestraTotal"></label>
+    </div>
+    <script src="index.js"></script>
+    <script src="tarea.js"></script>
+  </body>
+</html>
