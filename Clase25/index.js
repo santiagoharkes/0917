@@ -15,6 +15,7 @@ function agregarProducto(event) {
   event.preventDefault();
 
   const montoIngresado = Number(elementoInput.value);
+  // const tipoDeMovimiento = selectLindo.value;
   const tipoDeMovimiento = selectLindo.value;
 
   if (montoIngresado <= 0) {
