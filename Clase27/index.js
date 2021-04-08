@@ -19,11 +19,9 @@ const traerDatitos = (url) => {
 
 // Vamos a refactorizar con Promesasssssss
 
-traerDatitos(
-  "http://cors-anywhere.herokuapp.com/https://age-of-empires-2-api.herokuapp.com/api/v1/civilizations"
-)
+traerDatitos("https://swapi.dev/api/people")
   .then((losDatitos) => {
-    console.log("Traje lo del EISH", losDatitos);
+    console.log("Traje lo de ESTAR UORS", losDatitos);
     return traerDatitos("https://pokeapi.co/api/v2/pokemon");
   })
   .then((datosPokemon) => {
