@@ -65,3 +65,6 @@ traerDatitos();
 // Con el metodo que ustedes quieran
 // Y después pintarla
 // DARLE ESTILOS
+
+// Link para imagenes de pokemon
+// https://pokeres.bastionbot.org/images/pokemon/1.png

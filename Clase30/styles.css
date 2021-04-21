@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "New Tegomin", serif;
+}
+
+body {
+  background-color: #da4453; /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #89216b 0%,
+    #da4453 100%
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(
+    45deg,
+    #89216b 0%,
+    #da4453 100%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter-container {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.filter {
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.filter:focus {
+  box-shadow: 0px 0px 15px #fff;
+}
+
+.posts-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post {
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(-200deg, #8f94fb 0%, #4e54c8 100%);
+  background-image: linear-gradient(-200deg, #8f94fb 0%, #4e54c8 100%);
+  margin: 40px 0 0 0;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.post-title {
+  margin-bottom: 15px;
+}
+
+.post-body {
+  line-height: 1.3;
+}
+
+.numerito {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.loader {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  transition: opacity 0.1s ease-in;
+}
+
+.loader.show {
+  opacity: 1;
+}
+
+.circulito {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  animation: rebotanding 0.5s ease-in infinite;
+}
+
+.circulito:nth-last-of-type(2) {
+  animation-delay: 0.1s;
+  background-color: darkblue;
+}
+
+.circulito:nth-last-of-type(3) {
+  animation-delay: 0.2s;
+  background-color: chartreuse;
+}
+
+@keyframes rebotanding {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
