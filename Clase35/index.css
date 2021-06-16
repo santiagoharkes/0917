@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MuseoModerno", cursive;
+}
+
+.game {
+  height: auto;
+  padding-bottom: 100px;
+  background: rgb(1, 0, 80);
+  background: linear-gradient(
+    180deg,
+    rgba(1, 0, 80, 1) 0%,
+    rgba(47, 52, 145, 1) 100%
+  );
+  position: relative;
+}
+
+.score {
+  color: #fafafa;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.score h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.score p {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.intro {
+  color: #fafafa;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.intro button,
+.partido button {
+  width: 25%;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #21202e;
+  font-size: 20px;
+  background: red;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ce7816; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f5af19,
+    #ce7816
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f5af19,
+    #ce7816
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.partido button {
+  margin: 0 20px;
+}
+
+.partido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+  width: 50%;
+}
+
+.ganador {
+  color: #fafafa;
+  text-align: center;
+  font-size: 50px;
+}
+
+.manos,
+.opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.manos img {
+  width: 120px;
+  margin: 0 50px;
+}
+
+.mano-jugador {
+  transform: rotateZ(90deg) rotateY(180deg);
+}
+
+.mano-computadora {
+  transform: rotateZ(270deg);
+}
+
+.desvanecer {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.aparecer {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes moverManosJugador {
+  0% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(0px);
+  }
+  15% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(-50px);
+  }
+  25% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(0px);
+  }
+  35% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(-50px);
+  }
+  50% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(0px);
+  }
+  65% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(-50px);
+  }
+  75% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(0px);
+  }
+  85% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(-50px);
+  }
+  100% {
+    transform: rotateZ(90deg) rotateY(180deg) translateX(0px);
+  }
+}
+
+@keyframes moverManosComputadora {
+  0% {
+    transform: rotateZ(270deg) translateX(0px);
+  }
+  15% {
+    transform: rotateZ(270deg) translateX(-50px);
+  }
+  25% {
+    transform: rotateZ(270deg) translateX(0px);
+  }
+  35% {
+    transform: rotateZ(270deg) translateX(-50px);
+  }
+  50% {
+    transform: rotateZ(270deg) translateX(0px);
+  }
+  65% {
+    transform: rotateZ(270deg) translateX(-50px);
+  }
+  75% {
+    transform: rotateZ(270deg) translateX(0px);
+  }
+  85% {
+    transform: rotateZ(270deg) translateX(-50px);
+  }
+  100% {
+    transform: rotateZ(270deg) translateX(0px);
+  }
+}
+
+.lights {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.light-box {
+  height: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.light {
+  background-color: #f9c3ff;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 3px rgba(253, 93, 255, 0.6);
+}
+
+.light-sides::before,
+.light-sides::after {
+  content: "";
+  background-color: #f9c3ff;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 3px rgba(253, 93, 255, 0.6);
+  height: 3px;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+.light-sides::after {
+  right: 0;
+}
+
+.light-sides.small::before,
+.light-sides.small::after {
+  width: 100px;
+}
+
+.nucba-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 6%;
+}
+
+.nucba-logo {
+  width: 250px;
+}

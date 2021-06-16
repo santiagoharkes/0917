@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esto es React</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      //   VAMOS A ESTAR VIENDO LOS SIGUIENTES CONCEPTOS:
+      //   COMPONENTES, PROPIEDADES, JSX, ESTADO
+
+      // Vamos a empezar a crear cositas en RIACT
+
+      const App = () => {
+        // Esto es una funcion, que crea un componente
+        // Las funciones que crean componentes tienen que devolver algo
+        // Lo que tienen que devolver es UNA SOLA COSA
+
+        // El metodo createElement de React, va a recibir 3 parametros:
+        // El primero va a ser una etiqueta o un componente
+        // El segundo (objeto) van a ser atributos o propiedades
+        // El tercero (array) van a ser los hijos
+
+        const pepito = () => {
+          console.log("pepito");
+        };
+
+        return React.createElement("div", { className: "ComponenteAPP" }, [
+          React.createElement(
+            Titulo,
+            { manuelitaViviaEnPehuajo: "Perri, que onda????" },
+            []
+          ),
+          React.createElement(
+            OtroTitulo,
+            { cosaDinamica: "Se vienen cositas", clasecita: "titulito" },
+            []
+          ),
+          React.createElement(
+            OtroTitulo,
+            { cosaDinamica: "Lindaaaaaaaaaaaaaaaaas", clasecita: "tituloRojo" },
+            []
+          ),
+          React.createElement(
+            Titulo,
+            {
+              manuelitaViviaEnPehuajo: "Esto es dinamico?",
+              otroPar: "claveValor",
+            },
+            []
+          ),
+          React.createElement(
+            Botoncito,
+            {
+              texto: "Esto es un boton, haceme click",
+              haceAlgo: pepito,
+            },
+            []
+          ),
+          React.createElement(
+            Botoncito,
+            {
+              texto: "OTROOOOOOOOOOOOOOOOOOOOOOOO",
+              haceAlgo: () => {
+                console.log("Chauchis");
+              },
+            },
+            []
+          ),
+        ]);
+      };
+
+      const Titulo = (props) => {
+        return React.createElement(
+          "h1",
+          { className: "Otro texto" },
+          props.manuelitaViviaEnPehuajo
+        );
+      };
+
+      const OtroTitulo = (props) => {
+        return React.createElement(
+          "h3",
+          { className: props.clasecita },
+          props.cosaDinamica
+        );
+      };
+
+      const Botoncito = (props) => {
+        return React.createElement(
+          "button",
+          { onClick: props.haceAlgo },
+          props.texto
+        );
+      };
+
+      // El método render de ReactDOM va a recibir dos parametros
+      // El primero va a ser QUE pintar
+      // EL segundo va a ser DONDE pintarlo
+      ReactDOM.render(
+        React.createElement(App),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
